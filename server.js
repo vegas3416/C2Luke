@@ -21,7 +21,7 @@ app.post("/api/visitors", function (request, response) {
   var userName = request.body.name;
   if(!mydb) {
     console.log("No database.");
-    response.send("Hello " + userName + "!");
+    response.send("HOLA peeps " + userName + "!");
     return;
   }
   // insert the username as a document
@@ -99,7 +99,7 @@ app.use(express.static(__dirname + '/views'));
 
 
 
-var port = process.env.PORT || 3000
+var port = process.env.PORT || 3000;
 app.listen(port, function() {
     console.log("To view your app, open this link in your browser: http://localhost:" + port);
 });
