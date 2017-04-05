@@ -1,5 +1,5 @@
 ---
 applications:
- - name: GetStartedNode
+ - name: C2Luke
    random-route: true
    memory: 256M
